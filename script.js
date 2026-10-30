@@ -144,7 +144,7 @@ function answerQuestionOne(answer) {
   if (answer === 'tired') {
     q1Visual.innerHTML = illustrations.hug;
     q1Message.textContent = 'มาาา เค้ากอดดด 🫂';
-    q1Detail.textContent = 'วันนี้เก่งมากแล้วนะ พักตรงนี้แป๊บนึงก็ได้';
+    q1Detail.textContent = 'วันนี้เก่งมากแล้วนะ พักตรงนี้แปปนึงก็ได้';
     burstHearts(8);
   } else {
     q1Visual.innerHTML = illustrations.clap;
@@ -166,7 +166,7 @@ function answerQuestionTwo(answer) {
   } else {
     q2Visual.innerHTML = `
       <div class="cat-frame">
-        <img src="assets/sad-cat.png" alt="แมวทำหน้าเศร้าพร้อมน้ำตา" />
+<img src="./sad-cat.png" alt="แมวเศร้าาาา 🥺" />
       </div>`;
     q2Message.textContent = 'งืม ๆ';
     q2Detail.textContent = 'แต่เค้าก็คิดถึงอยู่ดีแหละะะ 🥺';

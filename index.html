@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#fff3f7" />
+  <meta name="description" content="ข้อความน่ารัก ๆ สำหรับวันศุกร์" />
+  <title>สวัสดีวันศุกร์ 💗</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-decoration" aria-hidden="true">
+    <span class="blob blob-one"></span>
+    <span class="blob blob-two"></span>
+    <span class="blob blob-three"></span>
+    <span class="tiny-star star-one">✦</span>
+    <span class="tiny-star star-two">✧</span>
+    <span class="tiny-star star-three">✦</span>
+  </div>
+
+  <main class="app-shell">
+    <div class="progress" aria-label="ความคืบหน้า">
+      <span class="progress-dot active" data-progress="0"></span>
+      <span class="progress-dot" data-progress="1"></span>
+      <span class="progress-dot" data-progress="2"></span>
+      <span class="progress-dot" data-progress="3"></span>
+    </div>
+
+    <!-- หน้าแรก -->
+    <section class="screen active" id="welcome" data-step="0" aria-labelledby="welcome-title">
+      <div class="card welcome-card">
+        <span class="eyebrow">มีข้อความเล็ก ๆ มาส่งให้ 💌</span>
+        <h1 id="welcome-title">สวัสดีวันศุกร์</h1>
+        <p class="subtitle">ก่อนจะหมดวันนี้ มีคนอยากถามอะไรนิดนึงงง</p>
+
+        <div class="illustration hero-illustration" aria-hidden="true">
+          <svg viewBox="0 0 320 250" role="img">
+            <defs>
+              <linearGradient id="sunGradient" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#FFE58F" />
+                <stop offset="100%" stop-color="#FFC7A8" />
+              </linearGradient>
+            </defs>
+            <g class="float-slow">
+              <circle cx="160" cy="116" r="74" fill="url(#sunGradient)" />
+              <path d="M106 99C92 83 92 58 111 48C128 39 142 50 147 66" fill="#FFF8F1" stroke="#6A5559" stroke-width="5" stroke-linecap="round" />
+              <path d="M213 99C228 83 228 58 209 48C192 39 178 50 173 66" fill="#FFF8F1" stroke="#6A5559" stroke-width="5" stroke-linecap="round" />
+              <ellipse cx="160" cy="125" rx="58" ry="52" fill="#FFF8F1" stroke="#6A5559" stroke-width="5" />
+              <ellipse cx="136" cy="121" rx="5" ry="7" fill="#4E4245" />
+              <ellipse cx="184" cy="121" rx="5" ry="7" fill="#4E4245" />
+              <path d="M151 140Q160 150 169 140" fill="none" stroke="#4E4245" stroke-width="4" stroke-linecap="round" />
+              <ellipse cx="124" cy="137" rx="11" ry="6" fill="#FFB7C8" opacity="0.7" />
+              <ellipse cx="196" cy="137" rx="11" ry="6" fill="#FFB7C8" opacity="0.7" />
+              <path d="M111 170Q86 179 89 204" fill="none" stroke="#6A5559" stroke-width="6" stroke-linecap="round" />
+              <path d="M209 170Q238 166 244 142" fill="none" stroke="#6A5559" stroke-width="6" stroke-linecap="round" />
+              <path class="wave-arm" d="M244 142Q248 130 257 123" fill="none" stroke="#6A5559" stroke-width="6" stroke-linecap="round" />
+              <path d="M252 124L261 117M255 128L267 127" fill="none" stroke="#6A5559" stroke-width="4" stroke-linecap="round" />
+              <path d="M118 178Q160 202 202 178L194 218H126Z" fill="#FF8DA8" stroke="#6A5559" stroke-width="5" stroke-linejoin="round" />
+              <path d="M136 190H184" stroke="#FFF8F1" stroke-width="5" stroke-linecap="round" opacity="0.9" />
+            </g>
+            <g fill="#FF7FA3">
+              <path d="M60 67C53 57 38 62 39 75C40 87 60 97 60 97C60 97 80 87 81 75C82 62 67 57 60 67Z" />
+              <path d="M261 67C255 59 243 63 244 73C245 82 261 90 261 90C261 90 277 82 278 73C279 63 267 59 261 67Z" opacity="0.75" />
+            </g>
+          </svg>
+        </div>
+
+        <button class="primary-button" type="button" data-next="question-one">
+          เปิดดูเลย <span aria-hidden="true">→</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- คำถามที่ 1 -->
+    <section class="screen" id="question-one" data-step="1" aria-labelledby="question-one-title" hidden>
+      <div class="card question-card">
+        <span class="question-number">คำถามที่ 1 / 2</span>
+        <h2 id="question-one-title">วันนี้ทำงานเหนื่อยไหมมม</h2>
+        <p class="subtitle">ตอบตามจริงได้เลยนะะ</p>
+
+        <div class="choice-grid" id="q1-choices">
+          <button class="choice-button choice-pink" type="button" data-answer="tired">
+            <span class="choice-emoji">🥺</span>
+            <span>เหนื่อยยย</span>
+          </button>
+          <button class="choice-button choice-yellow" type="button" data-answer="not-tired">
+            <span class="choice-emoji">✨</span>
+            <span>ไม่เหนื่อยค้าบ</span>
+          </button>
+        </div>
+
+        <div class="answer-panel" id="q1-result" aria-live="polite" hidden>
+          <div id="q1-visual"></div>
+          <h3 id="q1-message"></h3>
+          <p id="q1-detail"></p>
+          <button class="primary-button compact" type="button" data-next="question-two">
+            มีอีก 1 คำถามมม <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- คำถามที่ 2 -->
+    <section class="screen" id="question-two" data-step="2" aria-labelledby="question-two-title" hidden>
+      <div class="card question-card">
+        <span class="question-number">คำถามสุดท้ายแล้วว</span>
+        <h2 id="question-two-title">คิดถึงเค้ามั้ยยย</h2>
+        <p class="subtitle">ข้อนี้สำคัญมากกก 👀</p>
+
+        <div class="choice-grid" id="q2-choices">
+          <button class="choice-button choice-pink" type="button" data-answer="miss">
+            <span class="choice-emoji">💗</span>
+            <span>คิดถึงงง</span>
+          </button>
+          <button class="choice-button choice-blue" type="button" data-answer="not-miss">
+            <span class="choice-emoji">🙈</span>
+            <span>ไม่คิดถึงหรอก</span>
+          </button>
+        </div>
+
+        <div class="answer-panel" id="q2-result" aria-live="polite" hidden>
+          <div id="q2-visual"></div>
+          <h3 id="q2-message"></h3>
+          <p id="q2-detail"></p>
+          <button class="primary-button compact" type="button" data-next="ending">
+            End <span aria-hidden="true">♡</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- หน้าจบ -->
+    <section class="screen" id="ending" data-step="3" aria-labelledby="ending-title" hidden>
+      <div class="card ending-card">
+        <span class="eyebrow">ส่งมาถึงตรงนี้แล้วนะ 💞</span>
+        <h2 id="ending-title">จุ๊บหนึ่งทีค้าบบบ</h2>
+        <p class="subtitle">ขอให้เย็นวันศุกร์นี้ใจดีกับเบ้บนะ</p>
+
+        <div class="illustration end-illustration" aria-hidden="true">
+          <svg viewBox="0 0 330 250" role="img">
+            <g class="float-slow">
+              <ellipse cx="160" cy="135" rx="78" ry="72" fill="#FFF8F1" stroke="#6A5559" stroke-width="5" />
+              <path d="M102 105C82 85 86 56 108 48C127 40 143 54 146 74" fill="#FFF8F1" stroke="#6A5559" stroke-width="5" stroke-linecap="round" />
+              <path d="M219 105C239 85 235 56 213 48C194 40 178 54 175 74" fill="#FFF8F1" stroke="#6A5559" stroke-width="5" stroke-linecap="round" />
+              <path d="M125 127Q135 117 145 127" fill="none" stroke="#4E4245" stroke-width="5" stroke-linecap="round" />
+              <path d="M177 127Q187 117 197 127" fill="none" stroke="#4E4245" stroke-width="5" stroke-linecap="round" />
+              <path d="M153 151Q162 145 171 151" fill="none" stroke="#4E4245" stroke-width="4" stroke-linecap="round" />
+              <path d="M160 150C170 139 186 145 184 157C182 169 160 177 160 177C160 177 138 169 136 157C134 145 150 139 160 150Z" fill="#FF7898" />
+              <ellipse cx="111" cy="151" rx="14" ry="8" fill="#FFB7C8" opacity="0.75" />
+              <ellipse cx="209" cy="151" rx="14" ry="8" fill="#FFB7C8" opacity="0.75" />
+              <path d="M110 194Q160 224 210 194" fill="#FFB0C2" stroke="#6A5559" stroke-width="5" stroke-linejoin="round" />
+            </g>
+            <g class="kiss-heart">
+              <path d="M252 86C243 74 224 80 226 96C228 110 252 122 252 122C252 122 276 110 278 96C280 80 261 74 252 86Z" fill="#FF668A" />
+              <path d="M286 55C281 48 270 52 271 61C272 69 286 76 286 76C286 76 300 69 301 61C302 52 291 48 286 55Z" fill="#FF9CB3" />
+            </g>
+          </svg>
+        </div>
+
+        <p class="signature">จากคนที่คิดถึงเบ้บเสมอออ <span aria-hidden="true">♡</span></p>
+        <button class="secondary-button" id="restart-button" type="button">เล่นใหม่อีกครั้ง</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="sparkle-layer" id="sparkle-layer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>

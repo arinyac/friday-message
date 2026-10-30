@@ -143,7 +143,7 @@ function answerQuestionOne(answer) {
 
   if (answer === 'tired') {
     q1Visual.innerHTML = illustrations.hug;
-    q1Message.textContent = 'มาาา เค้ากอดดด 🫂';
+    q1Message.textContent = 'มาาา เค้ากอดดดดด 🫂';
     q1Detail.textContent = 'วันนี้เก่งมากก แต่จริง ๆ เก่งทุกวันอยู่ละ :3';
     burstHearts(8);
   } else {

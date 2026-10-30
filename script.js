@@ -144,12 +144,12 @@ function answerQuestionOne(answer) {
   if (answer === 'tired') {
     q1Visual.innerHTML = illustrations.hug;
     q1Message.textContent = 'มาาา เค้ากอดดด 🫂';
-    q1Detail.textContent = 'วันนี้เก่งมากแล้วนะ พักตรงนี้แปปนึงก็ได้';
+    q1Detail.textContent = 'วันนี้เก่งมากก แต่จริง ๆ เก่งทุกวันอยู่ละ :3';
     burstHearts(8);
   } else {
     q1Visual.innerHTML = illustrations.clap;
     q1Message.textContent = 'เก่งมากครับเบ้บ! 👏';
-    q1Detail.textContent = 'ปรบมือให้คนเก่งของเค้ารัว ๆ เลยยย';
+    q1Detail.textContent = 'ปรบมือให้คนเก่งของเค้าาา';
     burstHearts(7);
   }
 }
